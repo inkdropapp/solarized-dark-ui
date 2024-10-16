@@ -1,0 +1,24 @@
+{
+  "name": "solarized-dark-ui",
+  "version": "1.0.0",
+  "theme": "ui",
+  "themeAppearance": "dark",
+  "description": "Solarized Dark UI Theme for Inkdrop",
+  "styleSheets": [
+    "tokens.css",
+    "theme.css"
+  ],
+  "scripts": {},
+  "keywords": [
+    "inkdrop",
+    "markdown"
+  ],
+  "author": "Takuya Matsuyama<t@inkdrop.app>",
+  "license": "MIT",
+  "devDependencies": {
+    "@inkdropapp/theme-dev-helpers": "^0.2.0"
+  },
+  "engines": {
+    "inkdrop": "^5.9.0"
+  }
+}
