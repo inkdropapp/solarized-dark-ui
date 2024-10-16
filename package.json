@@ -16,7 +16,7 @@
   "author": "Takuya Matsuyama<t@inkdrop.app>",
   "license": "MIT",
   "devDependencies": {
-    "@inkdropapp/theme-dev-helpers": "^0.2.0"
+    "@inkdropapp/theme-dev-helpers": "^0.2.1"
   },
   "engines": {
     "inkdrop": "^5.9.0"
