@@ -1,6 +1,6 @@
 {
   "name": "solarized-dark-ui",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "theme": "ui",
   "themeAppearance": "dark",
   "type": "module",
@@ -14,10 +14,7 @@
     "inkdrop",
     "markdown"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/inkdropapp/solarized-dark-ui.git"
-  },
+  "repository": "https://github.com/inkdropapp/solarized-dark-ui",
   "author": "Takuya Matsuyama<t@inkdrop.app>",
   "license": "MIT",
   "devDependencies": {
