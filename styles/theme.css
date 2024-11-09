@@ -62,6 +62,7 @@
   --toggle-lane-background: var(--strong-transparent-black);
   --dropdown-menu-background: var(--color-bg);
   --inline-dropdown-menu-background: hsl(var(--hsl-base04) / 70%);
+  --vertical-menu-background: hsl(var(--hsl-base04) / 70%);
   --modal-box-header-background: var(--color-bg-highlight);
   --modal-box-content-background: var(--color-bg-muted-highlight);
   --modal-box-actions-background: var(--color-bg-muted-highlight);
@@ -94,6 +95,7 @@
   --note-list-bar-background: hsl(var(--hsl-bg-muted-highlight) / 70%);
   --sidebar-background: hsl(var(--hsl-bg) / 70%);
   --inline-dropdown-menu-background: hsl(var(--hsl-base04));
+  --vertical-menu-background: hsl(var(--hsl-base04));
 }
 
 :root:has(body.acrylic-window.platform-win32) {
