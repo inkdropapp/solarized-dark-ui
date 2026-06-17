@@ -24,6 +24,10 @@
   --info-color: var(--color-blue-500);
   --warning-color: var(--color-yellow-500);
 
+  /*--- Highlight (base default uses non-Solarized --color-sky-600) ---*/
+  --highlight-color: var(--color-blue-50);
+  --highlight-background: hsl(var(--hsl-blue-500) / 30%);
+
   /*--- Focused Input ---*/
   --input-focus-border-color: var(--color-blue-500);
   --focused-form-muted-border-color: var(--color-blue-500);
@@ -33,8 +37,19 @@
   --input-background: var(--color-neutral-950);
   --menu-background: var(--color-neutral-950);
   --dropdown-menu-background: var(--color-neutral-950);
+  --inline-dropdown-menu-background: hsl(var(--hsl-neutral-950) / 70%);
+  --vertical-menu-background: hsl(var(--hsl-neutral-950) / 70%);
   --form-select-background: var(--color-neutral-950);
+  --popup-background: var(--color-neutral-950);
   --notification-item-background: hsl(var(--hsl-neutral-950) / 80%);
+
+  /*--- Buttons ---*/
+  --button-background: hsl(var(--hsl-neutral-800) / 70%) none;
+  --button-hover-background-color: hsl(var(--hsl-neutral-700) / 70%);
+  --basic-button-hover-background: hsl(var(--hsl-neutral-800) / 50%);
+
+  /*--- Keyboard key ---*/
+  --kbd-background: hsl(var(--hsl-neutral-700) / 50%);
 
   /*--- Side bar ---*/
   --sidebar-background: var(--color-neutral-700);
@@ -57,6 +72,15 @@
   --editor-background: var(--color-neutral-900);
   --editor-floating-actions-background: hsl(var(--hsl-neutral-900) / 70%);
   --editor-drawer-background: hsl(var(--hsl-neutral-800) / 70%);
+
+  /*--- Segments — a step lighter than the editor so cards lift off it ---*/
+  --segment-background: var(--color-neutral-800);
+  --secondary-segment-background: hsl(var(--hsl-neutral-700) / 50%);
+  --grouped-segment-hover-background: hsl(var(--hsl-neutral-700) / 80%);
+  --piled-segments-background: var(--color-neutral-800);
+
+  /*--- Table ---*/
+  --table-header-background: hsl(var(--hsl-neutral-700) / 30%);
 
   /*--- Modal ---*/
   --modal-box-header-background: var(--color-neutral-800);
@@ -84,6 +108,8 @@
   --sidebar-background: hsl(var(--hsl-neutral-800) / 50%);
   --note-list-bar-background: hsl(var(--hsl-neutral-900) / 70%);
   --editor-background: hsl(var(--hsl-neutral-900) / 90%);
+  --inline-dropdown-menu-background: hsl(var(--hsl-neutral-950));
+  --vertical-menu-background: hsl(var(--hsl-neutral-950));
 }
 
 :root:has(body.acrylic-window.platform-win32) {
