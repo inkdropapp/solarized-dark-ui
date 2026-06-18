@@ -176,8 +176,8 @@
   --sidebar-background: hsl(var(--hsl-neutral-800) / 50%);
   --note-list-bar-background: hsl(var(--hsl-neutral-900) / 70%);
   --editor-background: hsl(var(--hsl-neutral-900) / 90%);
-  --inline-dropdown-menu-background: hsl(var(--hsl-neutral-950));
-  --vertical-menu-background: hsl(var(--hsl-neutral-950));
+  --inline-dropdown-menu-background: hsl(var(--hsl-neutral-900));
+  --vertical-menu-background: hsl(var(--hsl-neutral-900));
 }
 
 :root:has(body.acrylic-window.platform-win32) {
