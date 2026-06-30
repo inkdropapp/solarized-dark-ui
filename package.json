@@ -1,13 +1,15 @@
 {
-  "name": "solarized-dark-ui",
+  "name": "solarized-dark",
   "version": "2.0.0",
-  "theme": "ui",
+  "theme": true,
   "themeAppearance": "dark",
   "type": "module",
-  "description": "Solarized Dark UI Theme for Inkdrop",
+  "description": "Solarized Dark Theme for Inkdrop",
   "styleSheets": [
     "tokens.css",
-    "theme.css"
+    "ui.css",
+    "syntax.css",
+    "preview.css"
   ],
   "scripts": {
     "prepublishOnly": "./node_modules/.bin/generate-palette"
@@ -16,11 +18,11 @@
     "inkdrop",
     "markdown"
   ],
-  "repository": "https://github.com/inkdropapp/solarized-dark-ui",
+  "repository": "https://github.com/inkdropapp/solarized-dark",
   "author": "Takuya Matsuyama<t@inkdrop.app>",
   "license": "MIT",
   "devDependencies": {
-    "@inkdropapp/theme-dev-helpers": "^0.5.2"
+    "@inkdropapp/theme-dev-helpers": "^0.6.0"
   },
   "engines": {
     "inkdrop": "^6.0.0"

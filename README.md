@@ -1,6 +1,6 @@
-# Solarized Dark UI theme for Inkdrop
+# Solarized Dark theme for Inkdrop
 
-Solarized dark UI theme for [Inkdrop](https://www.inkdrop.app/).
+Solarized dark theme for [Inkdrop](https://www.inkdrop.app/).
 The color palette is based on [Solarized Osaka](https://github.com/craftzdog/solarized-osaka.nvim).
 
 ![screenshot](./docs/screenshot.png)
@@ -8,5 +8,5 @@ The color palette is based on [Solarized Osaka](https://github.com/craftzdog/sol
 ## Installation
 
 ```sh
-ipm install solarized-dark-ui
+ipm install solarized-dark
 ```
