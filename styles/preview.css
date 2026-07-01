@@ -72,10 +72,15 @@
     --mermaid-note-border-color: hsl(var(--hsl-yellow-600) / 55%);
     --mermaid-note-text-color: hsl(var(--hsl-yellow-100));
 
-    /* Sequence label box — Solarized magenta */
+    /*
+     * Sequence label box — Solarized magenta chip. Keep the text neutral:
+     * Mermaid's base theme reuses labelTextColor as the gitGraph branch-label
+     * text (branchLabelColor → labelTextColor), so a tinted value leaks onto
+     * the "main"/"develop" labels.
+     */
     --mermaid-label-box-background-color: hsl(var(--hsl-pink-900) / 40%);
     --mermaid-label-box-border-color: hsl(var(--hsl-pink-500) / 55%);
-    --mermaid-label-text-color: hsl(var(--hsl-pink-300));
+    --mermaid-label-text-color: hsl(var(--hsl-neutral-200)); /* base1 */
 
     /* Gantt */
     --mermaid-section-background-color: hsl(var(--hsl-neutral-700) / 30%);
