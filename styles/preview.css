@@ -8,8 +8,6 @@
       var(--hsl-neutral-800) / 40%
     ); /* was --color-canvas-subtle */
 
-    --mermaid-text-color: hsl(var(--hsl-neutral-200));
-    --mermaid-node-text-color: hsl(var(--hsl-neutral-200));
     /* Links (was --color-accent-fg) */
     --mde-preview-link-color: var(--color-cyan-500);
 
@@ -54,10 +52,10 @@
      * mermaid.css colors independently rather than cascading. Solarized Dark
      * is dark-only, so values are assigned directly (no light-dark()).
      */
-    --mermaid-line-color: hsl(var(--hsl-neutral-500)); /* base00 */
-    --mermaid-node-background-color: hsl(
-      var(--hsl-neutral-700) / 55%
-    ); /* base02 */
+    --mermaid-text-color: hsl(var(--hsl-neutral-200));
+    --mermaid-line-color: hsl(var(--hsl-cyan-500));
+    --mermaid-node-text-color: hsl(var(--hsl-neutral-200));
+    --mermaid-node-background-color: hsl(var(--hsl-neutral-700)); /* base02 */
     --mermaid-node-border-color: hsl(var(--hsl-blue-500));
     --mermaid-cluster-background-color: var(--solarized-preview-surface-subtle);
     --mermaid-cluster-border-color: hsl(
@@ -68,8 +66,8 @@
     ); /* base03 */
 
     /* Notes (sequence / state) — Solarized yellow */
-    --mermaid-note-background-color: hsl(var(--hsl-yellow-900) / 55%);
-    --mermaid-note-border-color: hsl(var(--hsl-yellow-600) / 55%);
+    --mermaid-note-background-color: hsl(var(--hsl-yellow-900));
+    --mermaid-note-border-color: hsl(var(--hsl-yellow-600));
     --mermaid-note-text-color: hsl(var(--hsl-yellow-100));
 
     /*
@@ -78,8 +76,8 @@
      * text (branchLabelColor → labelTextColor), so a tinted value leaks onto
      * the "main"/"develop" labels.
      */
-    --mermaid-label-box-background-color: hsl(var(--hsl-pink-900) / 40%);
-    --mermaid-label-box-border-color: hsl(var(--hsl-pink-500) / 55%);
+    --mermaid-label-box-background-color: hsl(var(--hsl-green-900));
+    --mermaid-label-box-border-color: hsl(var(--hsl-green-500));
     --mermaid-label-text-color: hsl(var(--hsl-neutral-200)); /* base1 */
 
     /* Gantt */
@@ -99,9 +97,9 @@
     /*
      * Seed palette — pie / git / quadrant / journey categorical scales.
      */
-    --mermaid-primary-color: hsl(var(--hsl-blue-700));
+    --mermaid-primary-color: hsl(var(--hsl-blue-600));
     --mermaid-secondary-color: hsl(var(--hsl-pink-700));
-    --mermaid-tertiary-color: hsl(var(--hsl-green-700));
+    --mermaid-tertiary-color: hsl(var(--hsl-green-600));
 
     /* Error */
     --mermaid-error-background-color: hsl(var(--hsl-red-950));
