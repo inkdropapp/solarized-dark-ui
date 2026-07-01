@@ -8,6 +8,8 @@
       var(--hsl-neutral-800) / 40%
     ); /* was --color-canvas-subtle */
 
+    --mermaid-text-color: hsl(var(--hsl-neutral-200));
+    --mermaid-node-text-color: hsl(var(--hsl-neutral-200));
     /* Links (was --color-accent-fg) */
     --mde-preview-link-color: var(--color-cyan-500);
 
@@ -21,7 +23,9 @@
     --mde-preview-inline-code-text-color: hsl(var(--hsl-neutral-400));
     --mde-preview-inline-code-border-width: 1px;
     --mde-preview-inline-code-border-color: hsl(var(--hsl-neutral-600) / 50%);
-    --mde-preview-inline-code-background-color: hsl(var(--hsl-neutral-600) / 30%);
+    --mde-preview-inline-code-background-color: hsl(
+      var(--hsl-neutral-600) / 30%
+    );
 
     /* Tables */
     --mde-preview-table-head-text-color: var(--color-yellow-500);
@@ -42,5 +46,85 @@
     --mde-preview-heading-color: var(--color-yellow-500);
     --mde-preview-strong-color: var(--color-neutral-200);
     --mde-preview-em-color: var(--color-green-500);
+
+    /*
+     * Mermaid diagrams. Overriding these base tokens cascades to most node,
+     * actor, state, packet, tag and requirement surfaces via mermaid.css's
+     * own var() chain — the entries below only cover the token families that
+     * mermaid.css colors independently rather than cascading. Solarized Dark
+     * is dark-only, so values are assigned directly (no light-dark()).
+     */
+    --mermaid-line-color: hsl(var(--hsl-neutral-500)); /* base00 */
+    --mermaid-node-background-color: hsl(
+      var(--hsl-neutral-700) / 55%
+    ); /* base02 */
+    --mermaid-node-border-color: hsl(var(--hsl-blue-500));
+    --mermaid-cluster-background-color: var(--solarized-preview-surface-subtle);
+    --mermaid-cluster-border-color: hsl(
+      var(--hsl-neutral-600) / 50%
+    ); /* base01 */
+    --mermaid-edge-label-background-color: hsl(
+      var(--hsl-neutral-800) / 85%
+    ); /* base03 */
+
+    /* Notes (sequence / state) — Solarized yellow */
+    --mermaid-note-background-color: hsl(var(--hsl-yellow-900) / 55%);
+    --mermaid-note-border-color: hsl(var(--hsl-yellow-600) / 55%);
+    --mermaid-note-text-color: hsl(var(--hsl-yellow-100));
+
+    /* Sequence label box — Solarized magenta */
+    --mermaid-label-box-background-color: hsl(var(--hsl-pink-900) / 40%);
+    --mermaid-label-box-border-color: hsl(var(--hsl-pink-500) / 55%);
+    --mermaid-label-text-color: hsl(var(--hsl-pink-300));
+
+    /* Gantt */
+    --mermaid-section-background-color: hsl(var(--hsl-neutral-700) / 30%);
+    --mermaid-alt-section-background-color: hsl(var(--hsl-neutral-700) / 15%);
+    --mermaid-task-background-color: hsl(var(--hsl-blue-800) / 80%);
+    --mermaid-task-border-color: hsl(var(--hsl-blue-500));
+    --mermaid-active-task-background-color: hsl(var(--hsl-cyan-800) / 80%);
+    --mermaid-active-task-border-color: hsl(var(--hsl-cyan-500));
+    --mermaid-done-task-background-color: hsl(var(--hsl-neutral-600) / 60%);
+    --mermaid-done-task-border-color: hsl(var(--hsl-neutral-500));
+    --mermaid-crit-task-background-color: hsl(var(--hsl-red-800) / 80%);
+    --mermaid-crit-task-border-color: hsl(var(--hsl-red-500));
+    --mermaid-grid-color: hsl(var(--hsl-neutral-600) / 40%);
+    --mermaid-today-line-color: hsl(var(--hsl-orange-500));
+
+    /*
+     * Seed palette — pie / git / quadrant / journey categorical scales.
+     */
+    --mermaid-primary-color: hsl(var(--hsl-blue-700));
+    --mermaid-secondary-color: hsl(var(--hsl-pink-700));
+    --mermaid-tertiary-color: hsl(var(--hsl-green-700));
+
+    /* Error */
+    --mermaid-error-background-color: hsl(var(--hsl-red-950));
+    --mermaid-error-text-color: hsl(var(--hsl-red-300));
+
+    /* Event modeling — one hue per element kind */
+    --mermaid-em-processor-background-color: hsl(var(--hsl-violet-500) / 35%);
+    --mermaid-em-processor-border-color: hsl(var(--hsl-violet-500));
+    --mermaid-em-read-model-background-color: hsl(var(--hsl-green-500) / 35%);
+    --mermaid-em-read-model-border-color: hsl(var(--hsl-green-500));
+    --mermaid-em-command-background-color: hsl(var(--hsl-blue-500) / 35%);
+    --mermaid-em-command-border-color: hsl(var(--hsl-blue-500));
+    --mermaid-em-event-background-color: hsl(var(--hsl-yellow-500) / 35%);
+    --mermaid-em-event-border-color: hsl(var(--hsl-yellow-500));
+
+    /* Wardley map */
+    --mermaid-wardley-evolution-color: hsl(var(--hsl-orange-500));
+
+    /* Cynefin — one hue per domain */
+    --mermaid-cynefin-cliff-color: hsl(var(--hsl-red-400));
+    --mermaid-cynefin-complex-background-color: hsl(var(--hsl-green-500) / 35%);
+    --mermaid-cynefin-complicated-background-color: hsl(
+      var(--hsl-blue-500) / 35%
+    );
+    --mermaid-cynefin-chaotic-background-color: hsl(var(--hsl-red-500) / 35%);
+    --mermaid-cynefin-clear-background-color: hsl(var(--hsl-yellow-500) / 35%);
+    --mermaid-cynefin-confusion-background-color: hsl(
+      var(--hsl-violet-500) / 35%
+    );
   }
 }
