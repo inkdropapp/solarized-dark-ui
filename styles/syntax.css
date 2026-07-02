@@ -40,7 +40,9 @@
     --editor-tooltip-autocomplete-item-selected-background-color: var(
       --color-neutral-700
     );
-    --editor-tooltip-autocomplete-section-border-color: var(--color-neutral-600);
+    --editor-tooltip-autocomplete-section-border-color: var(
+      --color-neutral-600
+    );
     --editor-tooltip-autocomplete-item-selected-color: var(--color-neutral-200);
     --editor-inline-tooltip-color: var(--color-neutral-300);
     --editor-inline-tooltip-background-color: hsl(var(--hsl-neutral-800) / 40%);
@@ -223,7 +225,7 @@
     --syntax-heading-5-font-weight: var(--syntax-heading-font-weight);
     --syntax-heading-6-color: var(--syntax-heading-color);
     --syntax-heading-6-font-weight: var(--syntax-heading-font-weight);
-    --syntax-content-separator-color: var(--color-neutral-600);
+    --syntax-content-separator-color: var(--color-pink-600);
     --syntax-list-color: var(--editor-foreground-color);
     --syntax-quote-color: var(--color-neutral-400);
     --syntax-quote-font-style: italic;
