@@ -1337,7 +1337,7 @@
   "--syntax-heading-5-font-weight": "bold",
   "--syntax-heading-6-color": "hsl(45deg 100% 35%)",
   "--syntax-heading-6-font-weight": "bold",
-  "--syntax-content-separator-color": "hsl(194deg 14% 40%)",
+  "--syntax-content-separator-color": "hsl(331deg 64% 47%)",
   "--syntax-list-color": "hsl(186deg 8% 55%)",
   "--syntax-quote-color": "hsl(186deg 8% 55%)",
   "--syntax-quote-font-style": "italic",
